@@ -1,0 +1,39 @@
+.clients {
+  display: flex;
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.clients__item {
+  margin-right: 30px;
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border: 1px solid #2196f3;
+    color: $accent-color;
+  }
+  &:hover {
+    border: 1px solid #2196f3;
+    color: $accent-color;
+  }
+}
